@@ -1,0 +1,65 @@
+﻿body {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content,
+.ftrpadding {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+#loginForm .form-control {
+    max-width: 280px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+#loginForm {
+    margin: 0 auto;
+    width: 250px;
+}
+
+#btn-padding-bt {
+    padding-bottom: 30px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 24px 0;
+}
+
+img.avatar {
+    width: 100px;
+    height: auto;
+}
+
+.btn-rightalign {
+    text-align: right;
+}
+
+.notelistalign {
+    padding-left: 100px;
+    padding-right: 100px;
+}

@@ -1,0 +1,26 @@
+﻿<div class="notelistalign">
+    <div class="btn-rightalign" id="btn-padding-bt">
+        <a class="btn btn-primary" asp-controller="Note" asp-action="Add">Wirte</a>
+    </div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Title</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var note in Model)
+            {
+                <tr>
+                    <td width="20%">@note.NoteNo</td>
+                    <td width="60%">
+                        <a asp-controller="Note" asp-action="Detail" asp-route-noteNo="@note.NoteNo">@note.NoteTitle</a>
+                    </td>
+                    <td width="20%">@note.UserNo</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
